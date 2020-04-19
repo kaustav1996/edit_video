@@ -1,0 +1,23 @@
+<title>Suggest Video</title>
+
+	{% with messages = get_flashed_messages(with_categories=true) %}
+	{% if messages %}
+	<div>
+		            {% for message in messages %}
+	 	<p>{{ message[1] }}</p>
+	{% endfor %}</div>
+	{% endif %}
+	{% endwith %}
+	<form action="" method="post">
+		   {{ form.csrf }}
+	<div class="input text">
+		        {{ form.u.label }} {{ form.u }}</div>
+	<div class="input text">
+		        {{ form.f.label }} {{ form.f }}</div>
+	<div class="input text">
+		        {{ form.t.label }} {{ form.t }}</div>
+	<div class="input text">
+		        {{ form.c.label }} {{ form.c }}</div>
+	<div class="input submit">
+		        <input type="submit" value="Submit"></div>
+	</form>
