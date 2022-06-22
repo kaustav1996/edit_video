@@ -10,7 +10,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 moviepy==1.0.0
-numpy==1.18.2
+numpy==1.22.0
 Pillow==7.1.1
 pkg-resources==0.0.0
 proglog==0.1.9
